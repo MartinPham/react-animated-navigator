@@ -1,0 +1,72 @@
+.NavigatorTransitionGroup {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100vh;
+
+	.NavigatorTransition {
+		margin-top: 0px;
+
+		position: absolute;
+		width: 100%;
+		top: 0px;
+		bottom: 0px;
+		background: #fff;
+
+		overflow: scroll;
+		-webkit-overflow-scrolling: touch;
+
+		&.pageTransition-enter-active,
+		&.pageTransition-exit-active {
+
+			overflow: hidden;
+		}
+
+
+	}
+
+
+
+	@import 'transitions/fly.scss';
+	@import 'transitions/slide.scss';
+	@import 'transitions/flip.scss';
+	@import 'transitions/none.scss';
+
+}
+
+.NavigatorSharedElementTransitionGhost {
+	position: absolute;
+	background: transparent;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	display: none;
+	z-index: 990;
+}
+
+.NavigatorSharedElementTransitionGhostBackground {
+	transition: all 0.1s;
+	// background: #fff;
+	opacity: 0;
+	z-index: 991;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.NavigatorSharedElementTransitionGhostElements {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 992;
+}
+
+
+
+

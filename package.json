@@ -1,0 +1,42 @@
+{
+	"name": "react-animated-navigator",
+	"version": "1.0.28",
+	"description": "React animated Navigator",
+	"main": "./build/index.js",
+	"peerDependencies": {
+		"react": ">=16.8.0",
+		"react-router": ">=5.1.0"
+	},
+	"scripts": {
+		"watch": "webpack --watch",
+		"build": "yarn ; rm -rf ./node_modules/react ; rm -rf ./node_modules/react-router ; webpack",
+		"dist": "yarn build ; yarn publish --access public"
+	},
+	"author": "MartinPham",
+	"license": "ISC",
+	"keywords": [
+		"react",
+		"react-router",
+		"transition",
+		"animate"
+	],
+	"dependencies": {},
+	"devDependencies": {
+		"@babel/cli": "^7.7.0",
+		"@babel/core": "^7.7.2",
+		"@babel/plugin-proposal-class-properties": "^7.7.0",
+		"@babel/preset-env": "^7.7.1",
+		"@babel/preset-react": "^7.7.0",
+		"babel-loader": "^8.0.6",
+		"css-loader": "^3.2.0",
+		"immer": "^5.0.0",
+		"node-sass": "^4.13.0",
+		"react": ">=16.8.0",
+		"react-router": ">=5.1.0",
+		"react-transition-group": "^4.3.0",
+		"sass-loader": "^8.0.0",
+		"style-loader": "^1.0.0",
+		"webpack": "^4.41.2",
+		"webpack-cli": "^3.3.10"
+	}
+}

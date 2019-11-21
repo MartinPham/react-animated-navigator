@@ -1,0 +1,35 @@
+$enteringDuration: 300ms;
+$exitingDuration: 300ms;
+
+
+  // NONE
+  // Left - Right
+  &.none-forward, &.none-back {
+    .pageTransition-enter {
+      z-index: 10;
+      opacity: 0;
+      transition: all $enteringDuration;
+
+      &.pageTransition-enter-active {
+        opacity: 1;
+      }
+    }
+
+
+    .pageTransition-enter-done {
+    }
+
+    .pageTransition-exit {
+      z-index: 1;
+      opacity: 1;
+      transition: all $exitingDuration;
+
+      &.pageTransition-exit-active {
+        opacity: 0;
+      }
+    }
+
+
+    .pageTransition-exit-done {
+    }
+  }

@@ -1,0 +1,151 @@
+$enteringDuration: 400ms;
+$exitingDuration: 400ms;
+
+
+
+
+  // FLIP
+  // Left - Right
+  &.flipLeft-forward, &.flipRight-back {
+		perspective: 600px;
+		
+    .pageTransition-enter {
+			position: absolute;
+      transition: all $enteringDuration;
+      transform-style: preserve-3d;
+			transform: rotateY(-180deg);
+
+      &.pageTransition-enter-active {
+        transform: rotateY(0deg);
+      }
+    }
+
+
+    .pageTransition-enter-done {
+    }
+
+    .pageTransition-exit {
+			position: absolute;
+      transition: all $exitingDuration;
+      transform-style: preserve-3d;
+			transform: rotateY(0deg);
+			backface-visibility: hidden;
+
+      &.pageTransition-exit-active {
+        transform: rotateY(180deg);
+      }
+    }
+
+
+    .pageTransition-exit-done {
+    }
+  }
+
+
+  &.flipLeft-back, &.flipRight-forward {
+		perspective: 600px;
+		
+    .pageTransition-enter {
+			position: absolute;
+      transition: all $exitingDuration;
+      transform-style: preserve-3d;
+			transform: rotateY(180deg);
+
+      &.pageTransition-enter-active {
+        transform: rotateY(0deg);
+      }
+    }
+
+
+    .pageTransition-enter-done {
+    }
+
+    .pageTransition-exit {
+			position: absolute;
+      transition: all $enteringDuration;
+      transform-style: preserve-3d;
+			transform: rotateY(0deg);
+			backface-visibility: hidden;
+
+      &.pageTransition-exit-active {
+        transform: rotateY(-180deg);
+      }
+    }
+
+
+    .pageTransition-exit-done {
+    }
+  }
+
+
+  // Up - Down
+  &.flipUp-forward, &.flipDown-back {
+    perspective: 600px;
+		
+    .pageTransition-enter {
+			position: absolute;
+      transition: all $enteringDuration;
+      transform-style: preserve-3d;
+			transform: rotateX(-180deg);
+
+      &.pageTransition-enter-active {
+        transform: rotateX(0deg);
+      }
+    }
+
+
+    .pageTransition-enter-done {
+    }
+
+    .pageTransition-exit {
+			position: absolute;
+      transition: all $exitingDuration;
+      transform-style: preserve-3d;
+			transform: rotateX(0deg);
+			backface-visibility: hidden;
+
+      &.pageTransition-exit-active {
+        transform: rotateX(180deg);
+      }
+    }
+
+
+    .pageTransition-exit-done {
+    }
+  }
+
+
+  &.flipUp-back, &.flipDown-forward {
+    perspective: 600px;
+		
+    .pageTransition-enter {
+			position: absolute;
+      transition: all $exitingDuration;
+      transform-style: preserve-3d;
+			transform: rotateX(180deg);
+
+      &.pageTransition-enter-active {
+        transform: rotateX(0deg);
+      }
+    }
+
+
+    .pageTransition-enter-done {
+    }
+
+    .pageTransition-exit {
+			position: absolute;
+      transition: all $enteringDuration;
+      transform-style: preserve-3d;
+			transform: rotateX(0deg);
+			backface-visibility: hidden;
+
+      &.pageTransition-exit-active {
+        transform: rotateX(-180deg);
+      }
+    }
+
+
+    .pageTransition-exit-done {
+    }
+  }

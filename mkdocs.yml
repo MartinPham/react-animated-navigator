@@ -1,0 +1,6 @@
+site_name: React Animated Navigator
+theme:
+  name: 'material'
+  palette:
+    primary: 'blue'
+    accent: 'lightblue'

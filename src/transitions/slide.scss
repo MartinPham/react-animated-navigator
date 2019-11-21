@@ -1,0 +1,131 @@
+$enteringDuration: 400ms;
+$exitingDuration: 400ms;
+
+
+
+
+  // SLIDE
+  // Left - Right
+  &.slideLeft-forward, &.slideRight-back {
+    .pageTransition-enter {
+      transition: all $enteringDuration;
+
+      transform: translateX(100%);
+
+      &.pageTransition-enter-active {
+        transform: translateX(0);
+      }
+    }
+
+
+    .pageTransition-enter-done {
+    }
+
+    .pageTransition-exit {
+      transition: all $exitingDuration;
+
+      transform: translateX(0);
+
+      &.pageTransition-exit-active {
+        transform: translateX(-100%);
+      }
+    }
+
+
+    .pageTransition-exit-done {
+    }
+  }
+
+
+  &.slideLeft-back, &.slideRight-forward {
+    .pageTransition-enter {
+      transition: all $enteringDuration;
+
+      transform: translateX(-100%);
+
+      &.pageTransition-enter-active {
+        transform: translateX(0);
+      }
+    }
+
+
+    .pageTransition-enter-done {
+    }
+
+    .pageTransition-exit {
+      transition: all $exitingDuration;
+
+      transform: translateX(0);
+
+      &.pageTransition-exit-active {
+        transform: translateX(+100%);
+      }
+    }
+
+
+    .pageTransition-exit-done {
+    }
+  }
+
+
+  // Up - Down
+  &.slideUp-forward, &.slideDown-back {
+    .pageTransition-enter {
+      transition: all $enteringDuration;
+
+      transform: translateY(100%);
+
+      &.pageTransition-enter-active {
+        transform: translateY(0);
+      }
+    }
+
+
+    .pageTransition-enter-done {
+    }
+
+    .pageTransition-exit {
+      transition: all $exitingDuration;
+
+      transform: translateY(0);
+
+      &.pageTransition-exit-active {
+        transform: translateY(-100%);
+      }
+    }
+
+
+    .pageTransition-exit-done {
+    }
+  }
+
+
+  &.slideUp-back, &.slideDown-forward {
+    .pageTransition-enter {
+      transition: all $enteringDuration;
+
+      transform: translateY(-100%);
+
+      &.pageTransition-enter-active {
+        transform: translateX(0);
+      }
+    }
+
+
+    .pageTransition-enter-done {
+    }
+
+    .pageTransition-exit {
+      transition: all $exitingDuration;
+
+      transform: translateY(0);
+
+      &.pageTransition-exit-active {
+        transform: translateY(+100%);
+      }
+    }
+
+
+    .pageTransition-exit-done {
+    }
+  }

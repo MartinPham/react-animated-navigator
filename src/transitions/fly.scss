@@ -1,0 +1,153 @@
+$enteringDuration: 400ms;
+$exitingDuration: 400ms;
+
+
+  // FLY
+  // Left - Right
+  &.flyLeft-forward, &.flyRight-back {
+    .pageTransition-enter {
+      z-index: 10;
+      opacity: 0;
+      transition: all $enteringDuration;
+
+      transform: translateX(100%);
+
+      &.pageTransition-enter-active {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+
+    .pageTransition-enter-done {
+    }
+
+    .pageTransition-exit {
+      z-index: 1;
+      opacity: 1;
+      transition: all $exitingDuration;
+
+      transform: translateX(0);
+
+      &.pageTransition-exit-active {
+        opacity: 0;
+        transform: translateX(-20%);
+      }
+    }
+
+
+    .pageTransition-exit-done {
+    }
+  }
+
+
+  &.flyLeft-back, &.flyRight-forward {
+    .pageTransition-enter {
+      z-index: 1;
+      opacity: 0;
+      transition: all $enteringDuration;
+
+      transform: translateX(-20%);
+
+      &.pageTransition-enter-active {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+
+    .pageTransition-enter-done {
+    }
+
+    .pageTransition-exit {
+      z-index: 10;
+      transition: all $exitingDuration;
+      opacity: 1;
+
+      transform: translateX(0);
+
+      &.pageTransition-exit-active {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+    }
+
+
+    .pageTransition-exit-done {
+    }
+  }
+
+
+  // Up & Down
+  &.flyUp-forward, &.flyDown-back {
+    .pageTransition-enter {
+      z-index: 10;
+      opacity: 0;
+      transition: all $enteringDuration;
+
+      transform: translateY(100%);
+
+      &.pageTransition-enter-active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+
+    .pageTransition-enter-done {
+    }
+
+    .pageTransition-exit {
+      z-index: 1;
+      opacity: 1;
+      transition: all $exitingDuration;
+
+      transform: translateY(0) scale(1);
+
+      &.pageTransition-exit-active {
+        opacity: 0;
+        transform: translateY(10%) scale(0.8);
+      }
+    }
+
+
+    .pageTransition-exit-done {
+    }
+  }
+
+
+  &.flyUp-back, &.flyDown-forward {
+    .pageTransition-enter {
+      z-index: 1;
+      opacity: 0;
+      transition: all 300ms;
+
+      transform: translateY(20%) scale(0.8);
+
+      &.pageTransition-enter-active {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+
+    .pageTransition-enter-done {
+    }
+
+    .pageTransition-exit {
+      z-index: 10;
+      transition: all $exitingDuration;
+      opacity: 1;
+
+      transform: translateY(0);
+
+      &.pageTransition-exit-active {
+        opacity: 0;
+        transform: translateY(100%);
+      }
+    }
+
+
+    .pageTransition-exit-done {
+    }
+  }
