@@ -1,6 +1,6 @@
 {
 	"name": "react-animated-navigator",
-	"version": "1.0.30",
+	"version": "1.0.32",
 	"description": "React animated Navigator",
 	"main": "./build/index.js",
 	"peerDependencies": {
@@ -9,7 +9,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://gitlab.com/martinpham/react-animated-navigator.git"
+		"url": "git+https://github.com/martinpham/react-animated-navigator.git"
 	},
 	"scripts": {
 		"watch": "webpack --watch",
