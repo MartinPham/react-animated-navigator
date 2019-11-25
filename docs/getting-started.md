@@ -42,7 +42,6 @@ import {Navigator} from 'react-animated-navigator';
 ```
 ```jsx
 <Navigator
-	extraStyles={styles}	
 	defaultDuration={400}
 >
 	<Route
