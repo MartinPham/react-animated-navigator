@@ -3,11 +3,11 @@
 A helper High-Order-Component to simplify navigation
 
 ## Import
-```
+```jsx
 import {withNavigator} from 'react-animated-navigator';
 ```
 
-```
+```jsx
 export default withNavigator(YourComponent)
 ```
 

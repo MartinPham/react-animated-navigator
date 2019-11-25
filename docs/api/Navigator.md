@@ -3,7 +3,7 @@
 Navigation provider.
 
 ## Import
-```
+```jsx
 import {Navigator} from 'react-animated-navigator';
 ```
 

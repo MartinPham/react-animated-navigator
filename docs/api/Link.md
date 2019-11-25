@@ -3,7 +3,7 @@
 Provides an easy way to navigation between routes
 
 ## Import
-```
+```jsx
 import {Link} from 'react-animated-navigator';
 ```
 

@@ -3,11 +3,11 @@
 A helper hook to simplify navigation
 
 ## Import
-```
+```jsx
 import {useNavigator} from 'react-animated-navigator';
 ```
 
-```
+```js
 const [go, history, location] = useNavigator()
 ```
 

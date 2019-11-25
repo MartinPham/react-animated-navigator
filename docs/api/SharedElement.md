@@ -3,7 +3,7 @@
 Define a focal element, which is a persistent element between routes
 
 ## Import
-```
+```jsx
 import {SharedElement} from 'react-animated-navigator';
 ```
 

@@ -6,29 +6,31 @@
 ## Add Package
 
 * For npm
-```
+```bash
 npm i react-animated-navigator react-router
 ```
 
 * For yarn
-```
+```bash
 yarn add react-animated-navigator react-router
 ```
 
 ## Integration
 
 * Creating `history` object
-```
+```jsx
 import {createBrowserHistory as createHistory} from 'history';
 ```
-```
+
+```js
 const historyObject = createHistory()
 ```
 
 * Wrap your application with `Router` component
-```
+```jsx
 import {Router} from 'react-router';
 ```
+
 ```jsx
 <Router history={historyObject}>
 ...
@@ -36,13 +38,13 @@ import {Router} from 'react-router';
 ```
 
 * Wrap your routes with `Navigator` component
-```
+```jsx
 import {Route} from 'react-router';
 import {Navigator} from 'react-animated-navigator';
 ```
+
 ```jsx
 <Navigator
-	extraStyles={styles}	
 	defaultDuration={400}
 >
 	<Route
