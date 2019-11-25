@@ -1,7 +1,7 @@
 image: python:alpine
 
 before_script:
-  - pip install mkdocs mkdocs-material
+  - pip install mkdocs mkdocs-material pygments jsx-lexer
 
 pages:
   script:
