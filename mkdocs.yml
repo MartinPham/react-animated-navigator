@@ -6,4 +6,3 @@ theme:
     accent: 'lightblue'
 markdown_extensions:
   - codehilite
-extra_css: [docs/assets/css/pygments.css]    
