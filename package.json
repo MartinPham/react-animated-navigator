@@ -1,11 +1,13 @@
 {
 	"name": "react-animated-navigator",
-	"version": "1.0.36",
+	"version": "1.0.37",
 	"description": "React animated Navigator",
 	"main": "./build/index.js",
 	"peerDependencies": {
+		"immer": "^5.0.0",
 		"react": ">=16.8.0",
-		"react-router": ">=5.1.0"
+		"react-router": ">=5.1.0",
+		"react-transition-group": "^4.3.0"
 	},
 	"repository": {
 		"type": "git",
@@ -35,6 +37,8 @@
 		"css-loader": "^3.2.0",
 		"immer": "^5.0.0",
 		"node-sass": "^4.13.0",
+		"react": ">=16.8.0",
+		"react-router": ">=5.1.0",
 		"react-transition-group": "^4.3.0",
 		"sass-loader": "^8.0.0",
 		"style-loader": "^1.0.0",
