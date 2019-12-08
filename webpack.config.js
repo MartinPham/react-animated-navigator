@@ -58,6 +58,18 @@ module.exports = {
             commonjs2: 'react-router',
             commonjs: 'react-router',
             amd: 'react-router'
+        },
+        'react-transition-group': {
+            root: 'ReactTransitionGroup',
+            commonjs2: 'react-transition-group',
+            commonjs: 'react-transition-group',
+            amd: 'react-transition-group'
+        },
+        'immer': {
+            root: 'Immer',
+            commonjs2: 'immer',
+            commonjs: 'immer',
+            amd: 'immer'
         }
     }
 };
