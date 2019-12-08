@@ -1,13 +1,11 @@
 {
 	"name": "react-animated-navigator",
-	"version": "1.0.37",
+	"version": "1.0.38",
 	"description": "React animated Navigator",
 	"main": "./build/index.js",
 	"peerDependencies": {
-		"immer": "^5.0.0",
 		"react": ">=16.8.0",
-		"react-router": ">=5.1.0",
-		"react-transition-group": "^4.3.0"
+		"react-router": ">=5.1.0"
 	},
 	"repository": {
 		"type": "git",
@@ -26,7 +24,10 @@
 		"transition",
 		"animate"
 	],
-	"dependencies": {},
+	"dependencies": {
+		"immer": "^5.0.0",
+		"react-transition-group": "^4.3.0"
+	},
 	"devDependencies": {
 		"@babel/cli": "^7.7.0",
 		"@babel/core": "^7.7.2",
@@ -35,11 +36,9 @@
 		"@babel/preset-react": "^7.7.0",
 		"babel-loader": "^8.0.6",
 		"css-loader": "^3.2.0",
-		"immer": "^5.0.0",
 		"node-sass": "^4.13.0",
 		"react": ">=16.8.0",
 		"react-router": ">=5.1.0",
-		"react-transition-group": "^4.3.0",
 		"sass-loader": "^8.0.0",
 		"style-loader": "^1.0.0",
 		"webpack": "^4.41.2",
