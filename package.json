@@ -1,6 +1,6 @@
 {
 	"name": "react-animated-navigator",
-	"version": "1.0.32",
+	"version": "1.0.35",
 	"description": "React animated Navigator",
 	"main": "./build/index.js",
 	"peerDependencies": {
